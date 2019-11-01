@@ -13,11 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
-        // $this->call(AddressesTableSeeder::class);
-        // $this->call(PostsTableSeeder::class);
-        // $this->call(TagsTableSeeder::class);
-
+        $this->call(UsersTableSeeder::class);
+        $this->call(AddressesTableSeeder::class);
+        $this->call(PostsTableSeeder::class);
+        $this->call(TagsTableSeeder::class);
 
         $posts = Post::get();
         $tags = Tag::get();
